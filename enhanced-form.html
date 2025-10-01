@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>enhanced-form</title>
+</head>
+<body>
+    <header>
+        <h2>ENHANCEMENT FORM</h2>
+    </header>
+
+    <section>
+        <h3>known web Technologies</h3>
+        <ul>
+            <li>html5</li>
+            <li>css</li>
+            <li>javascript</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>My weekly studying dchedule table:</h3>
+        <table border="1">
+            <tr>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Subject</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>6:00 PM - 8:00 PM</td>
+                <td>HTML & CSS</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>6:00 PM - 8:00 PM</td>
+                <td>JavaScript</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>6:00 PM - 8:00 PM</td>
+                <td>Project Work</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h3>Learning Media</h3>
+        <img src="media.jpg" alt="web development image" width="300"> <br>
+        <video width="300" controls>
+            <source src="vid.mp4">
+        </video>
+    </section>
+
+    <section>
+        <h3>Registration form</h3>
+         <form action="/submit" method="post">
+        <fieldset>
+            <legend>Sign Up Form</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required minlength="5">
+        </fieldset>
+    </section>
+
+    <section>
+        <h3>Preferences</h3>
+        <fieldset>
+            <legend>Choose your preferences</legend>
+
+            <label for="quantity">Quantity (1-10):</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10"><br><br>
+
+            <label for="range">Select Range (0-100):</label>
+            <input type="range" id="range" name="range" min="0" max="100"><br><br>
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Additional info</legend>
+            <label for="bio">Your bio</label> <br>
+            <textarea name="bio" id="bio" rows="4" cols="10"></textarea>
+        </fieldset>
+        <br>
+        <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
